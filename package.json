@@ -1,0 +1,34 @@
+{
+  "name": "daily-templates",
+  "version": "0.1.0",
+  "description": "Templates for Spark Daily",
+  "main": "index.js",
+  "engines": {
+    "node": "6.3.0",
+    "npm": "3.10.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "pretest": "npm run lint",
+    "test": "",
+    "lint": "semistandard --fix --verbose | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparkthecause/daily-templates.git"
+  },
+  "author": "Charles Burgess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sparkthecause/daily-templates/issues"
+  },
+  "homepage": "https://github.com/sparkthecause/daily-templates",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "mustache": "^2.2.1"
+  },
+  "devDependencies": {
+    "semistandard": "^8.0.0",
+    "snazzy": "^4.0.0"
+  }
+}
