@@ -1,6 +1,6 @@
 {
   "name": "daily-templates",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Templates for Spark Daily",
   "main": "index.js",
   "engines": {
