@@ -12,7 +12,8 @@
     "pretest": "npm run lint",
     "test": "",
     "lint": "eslint src --ext .js --ext .jsx",
-    "lib": "babel src --out-dir lib"
+    "lib": "babel src --out-dir lib",
+    "prepublish": "npm run lib"
   },
   "repository": {
     "type": "git",
