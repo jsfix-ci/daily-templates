@@ -1,6 +1,6 @@
 const React = require('react');
 
-const Divider = (
+const Divider = () => (
   <hr className="divider"/>
 );
 
