@@ -7,4 +7,8 @@ const Unsubscribe = ({link}) => (
   </div>
 );
 
+Unsubscribe.propTypes = {
+  link: React.PropTypes.string.isRequired
+};
+
 module.exports = Unsubscribe;

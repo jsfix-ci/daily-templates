@@ -24,4 +24,11 @@ const Share = ({emailImg, emailLink, smsImg, smsLink}) => (
   </div>
 );
 
+Share.propTypes = {
+  emailImg: React.PropTypes.object.isRequired,
+  emailLink: React.PropTypes.string.isRequired,
+  smsImg: React.PropTypes.object.isRequired,
+  smsLink: React.PropTypes.string.isRequired
+};
+
 module.exports = Share;

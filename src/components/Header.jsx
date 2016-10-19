@@ -10,4 +10,8 @@ const Header = ({image}) => (
   </div>
 );
 
+Header.propTypes = {
+  image: React.PropTypes.object.isRequired
+};
+
 module.exports = Header;
