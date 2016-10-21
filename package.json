@@ -1,8 +1,8 @@
 {
   "name": "daily-templates",
-  "version": "0.2.0",
-  "description": "Templates for Spark Daily",
-  "main": "index.js",
+  "version": "0.3.0",
+  "description": "Template components for Spark Daily",
+  "main": "lib/index.js",
   "engines": {
     "node": "6.3.0",
     "npm": "3.10.5"
@@ -11,7 +11,9 @@
     "start": "node server.js",
     "pretest": "npm run lint",
     "test": "",
-    "lint": "semistandard --fix --verbose | snazzy"
+    "lint": "eslint src --ext .js --ext .jsx",
+    "lib": "babel src --out-dir lib",
+    "prepublish": "npm run lib"
   },
   "repository": {
     "type": "git",
@@ -24,11 +26,12 @@
   },
   "homepage": "https://github.com/sparkthecause/daily-templates",
   "dependencies": {
-    "bluebird": "^3.4.1",
-    "mustache": "^2.2.1"
+    "react": "^15.3.2"
   },
   "devDependencies": {
-    "semistandard": "^8.0.0",
-    "snazzy": "^4.0.0"
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "eslint": "^3.8.1",
+    "eslint-plugin-react": "^6.4.1"
   }
 }
