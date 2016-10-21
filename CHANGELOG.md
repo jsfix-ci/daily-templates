@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+- Add react components
+- Add babel for JSX
+- Refactor linter to use plain ESLint
+- Remove handlebar templates
+
 ## 0.2.0
 
 - Add dynamic CSS file for body.mustache
