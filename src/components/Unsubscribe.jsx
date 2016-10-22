@@ -1,14 +1,14 @@
 const React = require('react');
 
-const Unsubscribe = ({link}) => (
+const Unsubscribe = ({href}) => (
   <div className="unsubscribe">
     <p>Don't want these emails? No worries!</p>
-    <p><a href={link}>Click here to unsubscribe.</a></p>
+    <p><a href={href}>Click here to unsubscribe.</a></p>
   </div>
 );
 
 Unsubscribe.propTypes = {
-  link: React.PropTypes.string.isRequired
+  href: React.PropTypes.string.isRequired
 };
 
 module.exports = Unsubscribe;
