@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0
+
+- Add Email component
+- Refactor Share
+  - prop `emailImg` to `email.img`, now optional
+  - prop `emailLink` to `email.href`
+  - prop `smsImg` to `sms.img`, now optional
+  - prop `smsLink` to `sms.href`
+- Refactor Header prop `image` to `img`
+- Refactor Unsubscribe prop `link` to `href`
+
 ## 0.3.0
 
 - Add react components
