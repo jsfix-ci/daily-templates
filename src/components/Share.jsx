@@ -14,11 +14,11 @@ const Share = ({emailImg, emailLink, smsImg, smsLink}) => (
         <a
           className="no-underline"
           href={smsLink} >
-          <img
+          {smsImg && <img
             className="smsImg"
             width="64"
             src={smsImg.src}
-            alt={smsImg.alt} />
+            alt={smsImg.alt} />}
           <p className="green">Send a text</p>
         </a>
       </div>
@@ -28,11 +28,11 @@ const Share = ({emailImg, emailLink, smsImg, smsLink}) => (
         <a
           className="no-underline"
           href={emailLink} >
-          <img
+          {emailImg && <img
             className="emailImg"
             width="64"
             src={emailImg.src}
-            alt={emailImg.alt} />
+            alt={emailImg.alt} />}
           <p className="blue">Send an email</p>
         </a>
       </div>
@@ -41,9 +41,9 @@ const Share = ({emailImg, emailLink, smsImg, smsLink}) => (
 );
 
 Share.propTypes = {
-  emailImg: React.PropTypes.object.isRequired,
+  emailImg: React.PropTypes.object,
   emailLink: React.PropTypes.string.isRequired,
-  smsImg: React.PropTypes.object.isRequired,
+  smsImg: React.PropTypes.object,
   smsLink: React.PropTypes.string.isRequired
 };
 
