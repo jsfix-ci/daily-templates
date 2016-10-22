@@ -1,17 +1,17 @@
 const React = require('react');
 
-const Header = ({image}) => (
+const Header = ({img}) => (
   <div className="header">
     <img
       className="headerImg"
       width="197"
-      src={image.src}
-      alt={image.alt} />
+      src={img.src}
+      alt={img.alt} />
   </div>
 );
 
 Header.propTypes = {
-  image: React.PropTypes.object.isRequired
+  img: React.PropTypes.object.isRequired
 };
 
 module.exports = Header;
