@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1
+
+- Refactor classNames
+
 ## 0.4.0
 
 - Add Email component

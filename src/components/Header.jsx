@@ -1,12 +1,8 @@
 const React = require('react');
 
 const Header = ({img}) => (
-  <div className="header">
-    <img
-      className="headerImg"
-      width="197"
-      src={img.src}
-      alt={img.alt} />
+  <div className="blurb-header">
+    <img src={img.src} alt={img.alt} />
   </div>
 );
 

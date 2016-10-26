@@ -1,7 +1,7 @@
 const React = require('react');
 
 const Divider = () => (
-  <hr className="divider"/>
+  <hr className="blurb-divider"/>
 );
 
 module.exports = Divider;

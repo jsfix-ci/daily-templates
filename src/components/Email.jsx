@@ -8,8 +8,10 @@ const Email = ({children, cssHref, subject}) => (
       <title>{subject}</title>
       {cssHref && <link rel="stylesheet" type="text/css" href={cssHref} />}
     </head>
-    <body>
-      {children}
+    <body className="email">
+      <div className="email-container blurbs">
+        {children}
+      </div>
     </body>
   </html>
 );
