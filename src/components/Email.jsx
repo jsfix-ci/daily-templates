@@ -9,7 +9,7 @@ const Email = ({children, cssHref, subject}) => (
       {cssHref && <link rel="stylesheet" type="text/css" href={cssHref} />}
     </head>
     <body className="email">
-      <div class="email-container blurbs">
+      <div className="email-container blurbs">
         {children}
       </div>
     </body>
