@@ -8,7 +8,6 @@
     "npm": "3.10.5"
   },
   "scripts": {
-    "start": "node server.js",
     "pretest": "npm run lint",
     "test": "",
     "lint": "eslint src --ext .js --ext .jsx",
