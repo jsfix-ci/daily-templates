@@ -1,7 +1,7 @@
 const React = require('react');
 
 const Header = ({img}) => (
-  <div className="blurb-header">
+  <div className="blurb blurb-header">
     <img src={img.src} alt={img.alt} />
   </div>
 );

@@ -1,7 +1,7 @@
 const React = require('react');
 
 const Paragraph = ({text}) => (
-  <p className="blurb-paragraph">{text}</p>
+  <p className="blurb blurb-paragraph">{text}</p>
 );
 
 Paragraph.propTypes = {
