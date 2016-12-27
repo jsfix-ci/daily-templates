@@ -1,7 +1,7 @@
 const React = require('react');
 
 const Title = ({text}) => (
-  <h1 className="blurb-title">{text}</h1>
+  <h1 className="blurb blurb-title">{text}</h1>
 );
 
 Title.propTypes = {

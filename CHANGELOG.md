@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.0
+
+- Remove title and description from `Share`
+- Add `blurb` className to all blurbs
+
 ## 0.4.1
 
 - Refactor classNames
