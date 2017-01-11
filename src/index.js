@@ -3,6 +3,5 @@ exports.Email = require('./components/Email');
 exports.Header = require('./components/Header');
 exports.Paragraph = require('./components/Paragraph');
 exports.Share = require('./components/Share');
-exports.Title = require('./components/Title').Title;
-exports.TitleEditMode = require('./components/Title').TitleEditMode;
+exports.Title = require('./components/Title');
 exports.Unsubscribe = require('./components/Unsubscribe');
