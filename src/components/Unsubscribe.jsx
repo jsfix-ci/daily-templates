@@ -1,14 +1,24 @@
 const React = require('react');
 
-const Unsubscribe = ({href}) => (
+const Unsubscribe = ({ data, isEditing, updateData }) => (
+  isEditing ?
+  <input
+    type="text"
+    value={data.href}
+    onChange={(event) => updateData({ href: event.target.value })} />
+  :
   <div className="blurb blurb-unsubscribe">
     <p>Don't want these emails? No worries!</p>
-    <p><a href={href}>Click here to unsubscribe.</a></p>
+    <p><a href={data.href}>Click here to unsubscribe.</a></p>
   </div>
 );
 
 Unsubscribe.propTypes = {
-  href: React.PropTypes.string.isRequired
+  data: React.PropTypes.shape({
+    href: React.PropTypes.string.isRequired
+  }),
+  isEditing: React.PropTypes.bool,
+  updateData: React.PropTypes.func
 };
 
 module.exports = Unsubscribe;

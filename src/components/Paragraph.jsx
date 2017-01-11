@@ -1,11 +1,22 @@
 const React = require('react');
 
-const Paragraph = ({text}) => (
-  <p className="blurb blurb-paragraph">{text}</p>
+const Paragraph = ({ data, isEditing, updateData }) => (
+  isEditing ?
+  <input
+    className="blurb blurb-paragraph"
+    type="text"
+    value={data.text}
+    onChange={(event) => updateData({ text: event.target.value })} />
+  :
+  <p className="blurb blurb-paragraph">{data.text}</p>
 );
 
 Paragraph.propTypes = {
-  text: React.PropTypes.string.isRequired
+  data: React.PropTypes.shape({
+    text: React.PropTypes.string.isRequired
+  }),
+  isEditing: React.PropTypes.bool,
+  updateData: React.PropTypes.func
 };
 
 module.exports = Paragraph;

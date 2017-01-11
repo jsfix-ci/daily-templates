@@ -1,14 +1,14 @@
 const React = require('react');
 
-const Title = ({ data: { text }, isEditing, updateData }) => (
+const Title = ({ data, isEditing, updateData }) => (
   isEditing ?
   <input
     className="blurb blurb-title"
     type="text"
-    value={text}
+    value={data.text}
     onChange={(event) => updateData({ text: event.target.value })} />
   :
-  <h1 className="blurb blurb-title">{text}</h1>
+  <h1 className="blurb blurb-title">{data.text}</h1>
 );
 
 Title.propTypes = {
