@@ -3,8 +3,9 @@ const update = require('immutability-helper');
 
 const Header = ({ data, isEditing, updateData }) => (
   isEditing ?
-  <div>
+  <div className="blurb blurb-header-editing">>
     <input
+      className="blurb-header-editing-src"
       type="text"
       value={data.img.src}
       onChange={(event) => updateData(update(data, {
@@ -13,6 +14,7 @@ const Header = ({ data, isEditing, updateData }) => (
         }
       }))} />
     <input
+      className="blurb-header-editing-alt"
       type="text"
       value={data.img.alt}
       onChange={(event) => updateData(update(data, {

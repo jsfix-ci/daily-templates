@@ -3,7 +3,7 @@ const React = require('react');
 const Paragraph = ({ data, isEditing, updateData }) => (
   isEditing ?
   <input
-    className="blurb blurb-paragraph"
+    className="blurb blurb-paragraph-editing"
     type="text"
     value={data.text}
     onChange={(event) => updateData({ text: event.target.value })} />
