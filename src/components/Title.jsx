@@ -1,11 +1,22 @@
 const React = require('react');
 
-const Title = ({text}) => (
-  <h1 className="blurb blurb-title">{text}</h1>
+const Title = ({ data, isEditing, updateData }) => (
+  isEditing ?
+  <input
+    className="blurb blurb-title-editing"
+    type="text"
+    value={data.text}
+    onChange={(event) => updateData({ text: event.target.value })} />
+  :
+  <h1 className="blurb blurb-title">{data.text}</h1>
 );
 
 Title.propTypes = {
-  text: React.PropTypes.string.isRequired
+  data: React.PropTypes.shape({
+    text: React.PropTypes.string.isRequired
+  }),
+  isEditing: React.PropTypes.bool,
+  updateData: React.PropTypes.func
 };
 
 module.exports = Title;

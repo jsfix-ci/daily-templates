@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0
+
+- Add edit modes for blurbs
+
 ## 0.5.0
 
 - Remove title and description from `Share`
