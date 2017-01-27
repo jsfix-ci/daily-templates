@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.1
+
+- Add Babel ES2015 preset for ulgify compatibility
+
 ## 0.6.0
 
 - Add edit modes for blurbs
