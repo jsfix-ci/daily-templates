@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.0
+
+- Add `Image` blurb type with support for uploading files
+
 ## 0.6.1
 
 - Add Babel ES2015 preset for ulgify compatibility
