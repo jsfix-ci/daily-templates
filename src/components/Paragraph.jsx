@@ -2,7 +2,8 @@ const React = require('react');
 
 const Paragraph = ({ data, isEditing, updateData }) => (
   isEditing ?
-  <input
+  <textarea
+    autoFocus={true}
     className="blurb blurb-paragraph-editing"
     type="text"
     value={data.text}
