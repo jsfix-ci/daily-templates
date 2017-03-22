@@ -3,6 +3,7 @@ const React = require('react');
 const Title = ({ data, isEditing, updateData }) => (
   isEditing ?
   <input
+    autoFocus={true}
     className="blurb blurb-title-editing"
     type="text"
     value={data.text}
