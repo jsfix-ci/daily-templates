@@ -17,7 +17,7 @@ const Image = ({ data, isEditing, updateData }) => (
   isEditing ?
   <input
     accept="image/*"
-    className="blurb blurb-title-editing"
+    className="blurb blurb-image-editing"
     type="file"
     onChange={(event) => {
       const file = event.target.files[0]; // Only allow for single file selection

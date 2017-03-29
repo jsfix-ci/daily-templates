@@ -3,6 +3,7 @@ const React = require('react');
 const Unsubscribe = ({ data, isEditing, updateData }) => (
   isEditing ?
   <input
+    autoFocus={true}
     className="blurb blurb-unsubscribe-editing"
     type="text"
     value={data.href}
