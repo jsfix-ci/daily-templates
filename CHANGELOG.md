@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.1
+
+- Add `autoFocus={true}` for inputs
+- Refactor `Paragraph` to use blurb use text area component
+
 ## 0.7.0
 
 - Add `Image` blurb type with support for uploading files
