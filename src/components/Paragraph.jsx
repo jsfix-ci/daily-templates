@@ -1,9 +1,10 @@
 const React = require('react');
 const ReactMarkdown = require('react-markdown');
+const Textarea = require('react-textarea-autosize').default;
 
 const Paragraph = ({ data, isEditing, updateData }) => (
   isEditing ?
-  <textarea
+  <Textarea
     autoFocus={true}
     className="blurb blurb-paragraph-editing"
     type="text"
