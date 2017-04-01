@@ -1,4 +1,5 @@
 const React = require('react');
+const ReactMarkdown = require('react-markdown');
 
 const Paragraph = ({ data, isEditing, updateData }) => (
   isEditing ?
@@ -9,7 +10,12 @@ const Paragraph = ({ data, isEditing, updateData }) => (
     value={data.text}
     onChange={(event) => updateData({ text: event.target.value })} />
   :
-  <p className="blurb blurb-paragraph">{data.text}</p>
+  <ReactMarkdown
+    allowedTypes={['Text', 'Paragraph', 'Softbreak', 'Hardbreak', 'Link', 'Emph', 'BlockQuote', 'List', 'Item', 'Strong']}
+    className="blurb blurb-paragraph"
+    skipHtml={true}
+    source={data.text}
+    unwrapDisallowed={true} />
 );
 
 Paragraph.propTypes = {
