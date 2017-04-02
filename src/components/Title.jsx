@@ -1,4 +1,5 @@
 const React = require('react');
+const ReactMarkdown = require('react-markdown');
 
 const Title = ({ data, isEditing, updateData }) => (
   isEditing ?
@@ -9,7 +10,13 @@ const Title = ({ data, isEditing, updateData }) => (
     value={data.text}
     onChange={(event) => updateData({ text: event.target.value })} />
   :
-  <h1 className="blurb blurb-title">{data.text}</h1>
+  <ReactMarkdown
+    allowedTypes={['Text', 'Link', 'Emph', 'Strong']}
+    className="blurb blurb-title"
+    containerTagName="h1"
+    skipHtml={true}
+    source={data.text}
+    unwrapDisallowed={true} />
 );
 
 Title.propTypes = {

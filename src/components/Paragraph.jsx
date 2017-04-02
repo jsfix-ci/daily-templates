@@ -1,15 +1,22 @@
 const React = require('react');
+const ReactMarkdown = require('react-markdown');
+const Textarea = require('react-textarea-autosize').default;
 
 const Paragraph = ({ data, isEditing, updateData }) => (
   isEditing ?
-  <textarea
+  <Textarea
     autoFocus={true}
     className="blurb blurb-paragraph-editing"
     type="text"
     value={data.text}
     onChange={(event) => updateData({ text: event.target.value })} />
   :
-  <p className="blurb blurb-paragraph">{data.text}</p>
+  <ReactMarkdown
+    allowedTypes={['Text', 'Paragraph', 'Softbreak', 'Hardbreak', 'Link', 'Emph', 'BlockQuote', 'List', 'Item', 'Strong']}
+    className="blurb blurb-paragraph"
+    skipHtml={true}
+    source={data.text}
+    unwrapDisallowed={true} />
 );
 
 Paragraph.propTypes = {
