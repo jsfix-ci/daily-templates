@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.0
+
+- Add markdown support for `Title` and `Paragraph` blurbs
+
 ## 0.7.1
 
 - Add `autoFocus={true}` for inputs
