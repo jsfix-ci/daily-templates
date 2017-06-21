@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 
 const Email = ({children, cssHref, subject}) => (
   <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,9 +18,9 @@ const Email = ({children, cssHref, subject}) => (
 );
 
 Email.propTypes = {
-  children: React.PropTypes.node,
-  cssHref: React.PropTypes.string,
-  subject: React.PropTypes.string
+  children: PropTypes.node,
+  cssHref: PropTypes.string,
+  subject: PropTypes.string
 };
 
 module.exports = Email;

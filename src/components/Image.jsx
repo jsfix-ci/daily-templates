@@ -1,6 +1,6 @@
 /*eslint-env browser*/
-
 const React = require('react');
+const PropTypes = require('prop-types');
 
 const base64DataForFile = (file) => {
   return new window.Promise((resolve, reject) => {
@@ -34,12 +34,12 @@ const Image = ({ data, isEditing, updateData }) => (
 );
 
 Image.propTypes = {
-  data: React.PropTypes.shape({
-    alt: React.PropTypes.string,
-    src: React.PropTypes.string
+  data: PropTypes.shape({
+    alt: PropTypes.string,
+    src: PropTypes.string
   }),
-  isEditing: React.PropTypes.bool,
-  updateData: React.PropTypes.func
+  isEditing: PropTypes.bool,
+  updateData: PropTypes.func
 };
 
 module.exports = Image;

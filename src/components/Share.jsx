@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const update = require('immutability-helper');
 
 const Share = ({ data, isEditing, updateData }) => (
@@ -89,24 +90,24 @@ const Share = ({ data, isEditing, updateData }) => (
 );
 
 Share.propTypes = {
-  data: React.PropTypes.shape({
-    email: React.PropTypes.shape({
-      href: React.PropTypes.string,
-      img: React.PropTypes.shape({
-        alt: React.PropTypes.string,
-        src: React.PropTypes.string
+  data: PropTypes.shape({
+    email: PropTypes.shape({
+      href: PropTypes.string,
+      img: PropTypes.shape({
+        alt: PropTypes.string,
+        src: PropTypes.string
       })
     }),
-    sms: React.PropTypes.shape({
-      href: React.PropTypes.string,
-      img: React.PropTypes.shape({
-        alt: React.PropTypes.string,
-        src: React.PropTypes.string
+    sms: PropTypes.shape({
+      href: PropTypes.string,
+      img: PropTypes.shape({
+        alt: PropTypes.string,
+        src: PropTypes.string
       })
     })
   }),
-  isEditing: React.PropTypes.bool,
-  updateData: React.PropTypes.func
+  isEditing: PropTypes.bool,
+  updateData: PropTypes.func
 };
 
 module.exports = Share;
