@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const update = require('immutability-helper');
 
 const Header = ({ data, isEditing, updateData }) => (
@@ -30,14 +31,14 @@ const Header = ({ data, isEditing, updateData }) => (
 );
 
 Header.propTypes = {
-  data: React.PropTypes.shape({
-    img: React.PropTypes.shape({
-      alt: React.PropTypes.string,
-      src: React.PropTypes.string.isRequired
+  data: PropTypes.shape({
+    img: PropTypes.shape({
+      alt: PropTypes.string,
+      src: PropTypes.string.isRequired
     })
   }),
-  isEditing: React.PropTypes.bool,
-  updateData: React.PropTypes.func
+  isEditing: PropTypes.bool,
+  updateData: PropTypes.func
 };
 
 module.exports = Header;

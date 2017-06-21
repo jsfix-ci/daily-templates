@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 
 const Unsubscribe = ({ data, isEditing, updateData }) => (
   isEditing ?
@@ -16,11 +17,11 @@ const Unsubscribe = ({ data, isEditing, updateData }) => (
 );
 
 Unsubscribe.propTypes = {
-  data: React.PropTypes.shape({
-    href: React.PropTypes.string.isRequired
+  data: PropTypes.shape({
+    href: PropTypes.string.isRequired
   }),
-  isEditing: React.PropTypes.bool,
-  updateData: React.PropTypes.func
+  isEditing: PropTypes.bool,
+  updateData: PropTypes.func
 };
 
 module.exports = Unsubscribe;

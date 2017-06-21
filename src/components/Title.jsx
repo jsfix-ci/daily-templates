@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const ReactMarkdown = require('react-markdown');
 
 const Title = ({ data, isEditing, updateData }) => (
@@ -20,11 +21,11 @@ const Title = ({ data, isEditing, updateData }) => (
 );
 
 Title.propTypes = {
-  data: React.PropTypes.shape({
-    text: React.PropTypes.string.isRequired
+  data: PropTypes.shape({
+    text: PropTypes.string.isRequired
   }),
-  isEditing: React.PropTypes.bool,
-  updateData: React.PropTypes.func
+  isEditing: PropTypes.bool,
+  updateData: PropTypes.func
 };
 
 module.exports = Title;
