@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.email {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+.blurbs {
+  /*font-family: "Avenir-Roman", "Aerial";*/
+  /*font-size: 12px;*/
+  width: 300px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  /*text-align: center;*/
+}
+.blurb {
+  font-family: "Avenir-Roman", "Aerial";
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.blurbs a {
+  color: #8E59CD;
+}
+.blurbs p {
+  color: #323232;
+  padding: 5px 0px;
+}
+.no-underline {
+  text-decoration: none;
+}
+.blurb-divider {
+  border: 0;
+  height: 14px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAAOCAYAAACVbiH8AAAAAXNSR0IArs4c6QAAAqxJREFUeAHtml9L21AYxpe2m7SUsRtBEC/EQlsCo+sXEHYzUC9FQUFl7Er0Kzi/w3a5DTfYYLI7/4A3gve1FiG0pYqCDAbeiGCL0jZ73i2VRJJ6LFmg6xM4zTnP+55zkt8pT5M02iNuJOAvAa1YLL6RIdPp9AfsTH+H52i9TEDr5ZPnuftLIJ/P98disfeapk3JyKZprler1aVsNnvu70wcrVcJ0LB6deV9Pu9SqTSMIX/ArLL2oWFaebQnU6nUiV1nnQQ6IUDD6oQa+zgIGIYxEA6Hd2BWzx0BqwHTOmw0Gq90Xf/lFqdGAqoEQqqJzCMBNwK5XO5xJBL56GVW0kdikiO5bmNQIwFVAjQsVVLMcyUQj8cXERhzDTrFMSvXqbJFAg8gwFvCB8BiqpNAoVAYjEajB1D7nRHP1nmtVnuRyWR+emYwQAJtCARuWOVyeRXHE/i8bRgw1CEBPJsaxe3eqHRHXZ5PraO9jH1rfSGb79Cegj6AveTtob4ndW5dT8DEs8uNRCKxH9SZtL5YgcxXqVTeNpvN1VAo9CWQCTnJPyMA44mgTGCCp9YkF1jbaaxtGPqMaDCmb9Aa0L6j+czKu4S+iVK32tx1KQGs7ZwcejKZDMxHApuotSYwrRXUA5+3NT/3/hDAl3UII71GuV1LGNUNjGgN2i6KbC+hLUB78rf551NeJP0EEzuzaax2IQGsbRPruP3fXmF14ZrwkD0I4NZ+DaF5j/B98mf8Ki/cl8Q4CdwlwH8J7xJhW4kArrBO8Qt7pZRsS5I+0tcmsUoCygRuL+eVezCRBCwCeGFUx/tVszChcdz2JSH3ecC5Rk4ZOVv1ev0rXiA1PPIok0BbAjSstngYVCEA45JnVAk8z0jBlEZQdOkHkzJQjnFFVULzCEZ1Izo3EuiUwG8Xm77gCGjrOgAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.blurb-header {
+  padding: 20px;
+  background-color: #8E59CD;
+}
+.blurb-header img {
+  width: 197px;
+}
+.blurb-paragraph {
+  text-align: center;
+}
+.blurb-share {
+  /*white-space: nowrap;*/
+}
+.blurb-share img {
+  width: 64px;
+}
+.blurb-share-email {
+  display: inline-block;
+  width: 35%;
+  margin-top: 10px;
+}
+.blurb-share-email p {
+  color: #03aeda;
+}
+.blurb-share-sms {
+  display: inline-block;
+  width: 35%;
+  margin-top: 10px;
+}
+.blurb-share-sms p {
+  color: #5bcc5d;
+}
+.blurb-tagline {
+  color: #8E59CD;
+  font-size: 16px;
+}
+.blurb-title {
+  color: #8E59CD;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.blurb-title-editing {
+  color: #8E59CD;
+  font-size: 20px;
+  margin-bottom: 0px;
+  border: none;
+}
+/*.blurb-unsubscribe a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #8E59CD;
+  border-radius: 10px;
+}*/
