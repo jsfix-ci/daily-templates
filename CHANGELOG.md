@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0
+
+- Add `Tagline` blurb
+- Update dependencies
+- Remove `isRequired` from all PropTypes
+
 ## 0.8.0
 
 - Add markdown support for `Title` and `Paragraph` blurbs
