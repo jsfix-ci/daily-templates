@@ -22,7 +22,7 @@ const Title = ({ data, isEditing, updateData }) => (
 
 Title.propTypes = {
   data: PropTypes.shape({
-    text: PropTypes.string.isRequired
+    text: PropTypes.string
   }),
   isEditing: PropTypes.bool,
   updateData: PropTypes.func

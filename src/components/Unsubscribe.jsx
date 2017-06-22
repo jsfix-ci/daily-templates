@@ -18,7 +18,7 @@ const Unsubscribe = ({ data, isEditing, updateData }) => (
 
 Unsubscribe.propTypes = {
   data: PropTypes.shape({
-    href: PropTypes.string.isRequired
+    href: PropTypes.string
   }),
   isEditing: PropTypes.bool,
   updateData: PropTypes.func

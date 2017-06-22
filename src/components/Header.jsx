@@ -34,7 +34,7 @@ Header.propTypes = {
   data: PropTypes.shape({
     img: PropTypes.shape({
       alt: PropTypes.string,
-      src: PropTypes.string.isRequired
+      src: PropTypes.string
     })
   }),
   isEditing: PropTypes.bool,
