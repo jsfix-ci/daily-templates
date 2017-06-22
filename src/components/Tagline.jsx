@@ -10,7 +10,7 @@ const Tagline = ({ data, isEditing, updateData }) => (
     value={data.text}
     onChange={(event) => updateData({ text: event.target.value })} />
   :
-  <span className="blurb blurb-tagline">{data.text}</span>
+  <span className="blurb blurb-tagline"><strong>{data.text}</strong></span>
 );
 
 Tagline.propTypes = {
