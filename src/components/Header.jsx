@@ -11,7 +11,7 @@ const Header = ({ data, isEditing, updateData }) => (
       value={data.img.src}
       onChange={(event) => updateData(update(data, {
         img: {
-          $set: { src: event.target.value }
+          src: { $set: event.target.value }
         }
       }))} />
     <input
@@ -20,7 +20,7 @@ const Header = ({ data, isEditing, updateData }) => (
       value={data.img.alt}
       onChange={(event) => updateData(update(data, {
         img: {
-          $set: { alt: event.target.value }
+          alt: { $set: event.target.value }
         }
       }))} />
   </div>
