@@ -15,7 +15,7 @@
   /*text-align: center;*/
 }
 .blurb {
-  font-family: "Avenir-Roman", "Aerial";
+  font-family: "Avenir-Roman", "Arial";
   font-size: 12px;
   text-align: center;
   padding: 10px 20px;
@@ -51,6 +51,34 @@
 .blurb-paragraph {
   text-align: center;
 }
+.blurb-section {
+  border-top: 20px solid #F7F7F7;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "Avenir-Black", "Arial Black";
+  color: #ffffff;
+}
+.blurb-section-red {
+  background-color: #f0625a;
+}
+.blurb-section-orange {
+  background-color: #ff7d41;
+}
+.blurb-section-yellow {
+  background-color: #fdd713;
+}
+.blurb-section-green {
+  background-color: #5bcc5d;
+}
+.blurb-section-blue {
+  background-color: #64adfa;
+}
+.blurb-section-purple {
+  background-color: #8e59cd;
+}
+.blurb-section-gray {
+  background-color: #5a5a5a;
+}
 .blurb-share {
   /*white-space: nowrap;*/
 }
@@ -75,7 +103,9 @@
 }
 .blurb-tagline {
   color: #8E59CD;
+  border-bottom: 2px solid #8E59CD;
   font-size: 16px;
+  font-family: "Avenir-Heavy", "Arial Bold";
 }
 .blurb-title {
   color: #8E59CD;
