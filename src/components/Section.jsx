@@ -29,7 +29,7 @@ const Section = ({ data, isEditing, updateData }) => (
       onChange={(event) => updateData(update(data, { text: { $set: event.target.value } }))} />
   </div>
   :
-  <span className={`$blurb blurb-section blurb-section-${data.type}`}>{data.text}</span>
+  <span className={`blurb blurb-section blurb-section-${data.type}`}>{data.text}</span>
 );
 
 Section.propTypes = {
