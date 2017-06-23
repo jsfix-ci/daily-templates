@@ -3,6 +3,7 @@
 ## 0.9.0
 
 - Add `Tagline` blurb
+- Add `Section` blurb
 - Add `data.href` prop to `Image` blurb
 - Add `data.href` and `data.alt` prop inputs to `Image` blurb in edit mode
 - Fix misuse of $set immutability-helper
