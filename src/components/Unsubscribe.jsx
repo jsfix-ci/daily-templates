@@ -12,13 +12,13 @@ const Unsubscribe = ({ data, isEditing, updateData }) => (
   :
   <div className="blurb blurb-unsubscribe">
     <p>Don't want these emails? No worries!</p>
-    <p><a href={data.href}>Click here to unsubscribe.</a></p>
+    <p><a href={data.href} data-pm-no-track>Click here to unsubscribe.</a></p>
   </div>
 );
 
 Unsubscribe.propTypes = {
   data: PropTypes.shape({
-    href: PropTypes.string.isRequired
+    href: PropTypes.string
   }),
   isEditing: PropTypes.bool,
   updateData: PropTypes.func
