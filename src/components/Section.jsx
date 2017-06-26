@@ -34,7 +34,7 @@ const Section = ({ data, isEditing, updateData }) => (
 
 Section.propTypes = {
   data: PropTypes.shape({
-    type: PropTypes.number,
+    type: PropTypes.string,
     text: PropTypes.string
   }),
   isEditing: PropTypes.bool,
