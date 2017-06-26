@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.1
+
+- Fix `data.type` proptype for `Section` blurb
+
 ## 0.9.0
 
 - Add `Tagline` blurb

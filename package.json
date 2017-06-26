@@ -1,6 +1,6 @@
 {
   "name": "daily-templates",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Template components for Spark Daily",
   "main": "lib/index.js",
   "engines": {
@@ -29,7 +29,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-markdown": "^2.5.0",
-    "react-textarea-autosize": "^5.0.6"
+    "react-textarea-autosize": "^5.0.7"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
