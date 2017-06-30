@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.2
+
+- Fix how files are uploaded for the `Image` blurb
+
 ## 0.9.1
 
 - Fix `data.type` proptype for `Section` blurb

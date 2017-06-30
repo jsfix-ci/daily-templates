@@ -4,7 +4,7 @@ const update = require('immutability-helper');
 
 const Header = ({ data, isEditing, updateData }) => (
   isEditing ?
-  <div className="blurb blurb-header-editing">>
+  <div className="blurb blurb-header-editing">
     <input
       className="blurb-header-editing-src"
       type="text"
