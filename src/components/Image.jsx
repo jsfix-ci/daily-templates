@@ -1,18 +1,6 @@
-/*eslint-env browser*/
 const React = require('react');
 const PropTypes = require('prop-types');
 const update = require('immutability-helper');
-
-const base64DataForFile = (file) => {
-  return new window.Promise((resolve, reject) => {
-    let reader = new window.FileReader();
-    reader.onload = result => {
-      const data = result && result.target && result.target.result;
-      data ? resolve(data) : reject();
-    };
-    reader.readAsDataURL(file);
-  });
-};
 
 const Image = ({ data, isEditing, updateData }) => (
   isEditing ?
@@ -21,12 +9,7 @@ const Image = ({ data, isEditing, updateData }) => (
       accept="image/*"
       className="blurb blurb-image-src-editing"
       type="file"
-      onChange={(event) => {
-        const file = event.target.files[0]; // Only allow for single file selection
-        if (file) {
-          base64DataForFile(file).then(srcData => updateData(update(data, { srcData: { $set: srcData } })));
-        }
-      }}
+      onChange={(event) => updateData(data, event.target.files[0])}
       onClick={(event) => event.target.value = null } />
     <input
       autoFocus={false}
