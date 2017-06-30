@@ -11,8 +11,8 @@ const Unsubscribe = ({ data, isEditing, updateData }) => (
     onChange={(event) => updateData({ href: event.target.value })} />
   :
   <div className="blurb blurb-unsubscribe">
-    <p>Don't want these emails? No worries!</p>
-    <p><a href={data.href} data-pm-no-track>Click here to unsubscribe.</a></p>
+    <p>{"Don't want these emails? No worries!"}</p>
+    <p><a href={data.href} data-pm-no-track>{'Click here to unsubscribe.'}</a></p>
   </div>
 );
 
